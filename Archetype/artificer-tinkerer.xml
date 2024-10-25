@@ -3,62 +3,62 @@
 	<info>
 		<name>Tinkerer Artificer Archetype</name>
 		<update version="0.0.1">
-			<file name="artificer-tinkerer.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/tashas-cauldron-of-everything/archetypes/artificer-alchemist.xml" />
+			<file name="artificer-tinkerer.xml" url="https://github.com/DanielloDD86/Artificer-Tinkerer_DND/raw/master/Archetype/artificer-tinkerer.xml" />
 		</update>
 	</info>
 
-	<element name="Alchemist" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_ARTIFICER_ALCHEMIST">
+	<element name="Tinkerer" type="Archetype" source="Artificer-Tinkerer" id="ID_HMBR_ARTI_ARCHETYPE_ARTIFICER_TINKERER">
 		<supports>Artificer Specialist, TCOE Base</supports>
 		<description>
 			<p>An Alchemist is an expert at combining reagents to produce mystical effects. Alchemists use their creations to give life and to leech it away. Alchemy is the oldest of artificer traditions, and its versatility has long been valued during times of war and peace.</p>
-			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_TOOL_PROFICIENCY" />
-			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMIST_SPELLS" />
-			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR" />
-			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMICAL_SAVANT" />
-			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_RESTORATIVE_REAGENTS" />
-			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_CHEMICAL_MASTERY" />
+			<div element="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TOOL_PROFICIENCY" />
+			<div element="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TINKERER_SPELLS" />
+			<div element="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TINKERERS_INFUSIONS" />
+			<div element="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TRANSMUTATIONAL_SAVANT" />
+			<div element="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_ACCIDENTAL_TINKERGAE" />
+			<div element="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_INFUSION_MASTERY" />
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_TOOL_PROFICIENCY" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMIST_SPELLS" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR" level="3" />
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMICAL_SAVANT" level="5" />
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_RESTORATIVE_REAGENTS" level="9" />
-			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_CHEMICAL_MASTERY" level="15" />
+			<grant type="Archetype Feature" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TOOL_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TINKERER_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TINKERERS_INFUSIONS" level="3" />
+			<grant type="Archetype Feature" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TRANSMUTATIONAL_SAVANT" level="5" />
+			<grant type="Archetype Feature" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_ACCIDENTAL_TINKERGAE" level="9" />
+			<grant type="Archetype Feature" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_INFUSION_MASTERY" level="15" />
 		</rules>
 	</element>
-	<element name="Tool Proficiency" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_TOOL_PROFICIENCY">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_TOOL_PROFICIENCY</requirements>
+	<element name="Tool Proficiency" type="Archetype Feature" source="Artificer-Tinkerer" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TOOL_PROFICIENCY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ARTI_ARTIFICER_TINKERER_TOOL_PROFICIENCY</requirements>
 		<description>
-			<p><em>3rd-level Alchemist feature</em></p>
-			<p>You gain proficiency with alchemist's supplies. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
+			<p><em>3rd-level Tinkerer feature</em></p>
+			<p>You gain proficiency with tinkerer's tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Proficiency" name="Tool Proficiency (Alchemist)" supports="Artisan tools" default="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+			<select type="Proficiency" name="Tool Proficiency (Tinkerer's)" supports="Artisan tools" default="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
 		</rules>
 	</element>
-	<element name="Alchemist Spells" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMIST_SPELLS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_SPELLS</requirements>
+	<element name="Tinkerer's Spells" type="Archetype Feature" source="Artificer-Tinkerer" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TINKERER_SPELLS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ARTI_ARTIFICER_TINKERER_SPELLS</requirements>
 		<description>
-			<p><em>3rd-level Alchemist feature</em></p>
-			<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Alchemist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
-			<h5 class="caption">ALCHEMIST SPELLS</h5>
+			<p><em>3rd-level Tinkerer feature</em></p>
+			<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Tinkerer Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.</p>
+			<h5 class="caption">TINKERER SPELLS</h5>
 			<table>
 				<thead>
 					<tr><td>Artificer Level</td><td>Spells</td></tr>
 				</thead>
-				<tr><td>3rd</td><td><em>healing word, ray of sickness</em></td></tr>
-				<tr><td>5th</td><td><em>flaming sphere, Melf’s acid arrow</em></td></tr>
-				<tr><td>9th</td><td><em>gaseous form, mass healing word</em></td></tr>
-				<tr><td>13th</td><td><em>blight, death ward</em></td></tr>
-				<tr><td>17th</td><td><em>cloudkill, raise dead</em></td></tr>
+				<tr><td>3rd</td><td><em>Absorb Elements, Distort Value</em></td></tr>
+				<tr><td>5th</td><td><em>Kinetic Jaunt, Find Traps</em></td></tr>
+				<tr><td>9th</td><td><em>Tiny Servant, Dispel Magic</em></td></tr>
+				<tr><td>13th</td><td><em>Fabricate, Stone Shape</em></td></tr>
+				<tr><td>17th</td><td><em>Animate Objects, Cloudkill</em></td></tr>
 			</table>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_HEALING_WORD" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" spellcasting="Artificer" level="3" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" spellcasting="Artificer" level="3" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" spellcasting="Artificer" level="5" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_MELFS_ACID_ARROW" spellcasting="Artificer" level="5" prepared="true" />
