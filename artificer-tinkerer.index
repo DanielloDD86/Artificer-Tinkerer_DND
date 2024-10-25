@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <index>
 	<info>
-		<name>Your Content</name>
+		<name>Artificer-Tinkerer</name>
 		<update version="1.0.0">
 			<file name="artificer-tinkerer.index" url="https://github.com/DanielloDD86/Artificer-Tinkerer_DND/raw/master/artificer-tinkerer.index" />
 		</update>
