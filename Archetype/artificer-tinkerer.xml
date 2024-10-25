@@ -10,12 +10,12 @@
 	<element name="Tinkerer" type="Archetype" source="Artificer-Tinkerer" id="ID_HMBR_ARTI_ARCHETYPE_ARTIFICER_TINKERER">
 		<supports>Artificer Specialist, TCOE Base</supports>
 		<description>
-			<p>An Alchemist is an expert at combining reagents to produce mystical effects. Alchemists use their creations to give life and to leech it away. Alchemy is the oldest of artificer traditions, and its versatility has long been valued during times of war and peace.</p>
+			<p>Tinkerer's love big balls</p>
 			<div element="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TOOL_PROFICIENCY" />
 			<div element="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TINKERER_SPELLS" />
 			<div element="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TINKERERS_INFUSIONS" />
 			<div element="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TRANSMUTATIONAL_SAVANT" />
-			<div element="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_ACCIDENTAL_TINKERGAE" />
+			<div element="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_ACCIDENTAL_TINKERAGE" />
 			<div element="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_INFUSION_MASTERY" />
 		</description>
 		<sheet display="false" />
@@ -24,7 +24,7 @@
 			<grant type="Archetype Feature" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TINKERER_SPELLS" level="3" />
 			<grant type="Archetype Feature" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TINKERERS_INFUSIONS" level="3" />
 			<grant type="Archetype Feature" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TRANSMUTATIONAL_SAVANT" level="5" />
-			<grant type="Archetype Feature" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_ACCIDENTAL_TINKERGAE" level="9" />
+			<grant type="Archetype Feature" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_ACCIDENTAL_TINKERAGE" level="9" />
 			<grant type="Archetype Feature" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_INFUSION_MASTERY" level="15" />
 		</rules>
 	</element>
@@ -74,78 +74,70 @@
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ARTI_ARTIFICER_TINKERER_TINKERERS_INFUSIONS</requirements>
 		<description>
 			<p><em>3rd-level Tinkerer feature</em></p>
-			<p>Beginning at 3rd level, whenever you finish a long rest, anytime you add an infusion to nonmagical item or object, you can choose to add two infusions onto that object, but instead of it being magical indefinitely, when the item is used for a check or attack more than 5 times, the object will lose both of its infusions and needs to be reapplied when you finish a long rest.</p>
+			<p>whenever you finish a long rest, anytime you add an infusion to nonmagical item or object, you can choose to add two infusions onto that object, but instead of it being magical indefinitely, when the item is used for a check or attack more than 5 times, the object will lose both of its infusions and needs to be reapplied when you finish a long rest.</p>
 			<p class="indent">When you are infusing multiple items during you rest, if you are double infusing, then means you can only infuse half rounded down the amount of the maximum amount of items you can infuse.</p>
-			<p class="indent">Maximum number of objects you can infuse is {{magical tinkering:objects}}.</p>
+			<p class="indent">Maximum number of objects you can infuse is {{item infusions:max}}.</p>
 		</description>
 		<sheet>
 			<description>whenever you finish a long rest, anytime you add an infusion to nonmagical item or object, you can choose to add two infusions onto that object. &#13;
 			When you are infusing multiple items during you rest, if you are double infusing, then means you can only infuse half rounded down the amount of the maximum amount of items you can infuse. &#13;
-			Maximum number of objects you can infuse is {{magical tinkering:objects}}.</description>
+			Maximum number of objects you can infuse is {{item infusions:max}}.</description>
 		</sheet>
 		<rules>
-			<stat name="magical tinkering:objects" value="1" bonus="base" />
-			<stat name="magical tinkering:objects" value="intelligence:modifier" bonus="base" />
+			<stat name="item infusions:max" value="2" level="2" />
+			<stat name="item infusions:max" value="1" level="6" />
+			<stat name="item infusions:max" value="1" level="10" />
+			<stat name="item infusions:max" value="1" level="14" />
+			<stat name="item infusions:max" value="1" level="18" />
 		</rules>
 	</element>
 	<element name="Transmutational Savant" type="Archetype Feature" source="Artificer-Tinkerer" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TRANSMUTATIONAL_SAVANT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ARTI_ARTIFICER_TINKERER_TRANSMUTATIONAL_SAVANT</requirements>
 		<description>
-			<p><em>5th-level Alchemist feature</em></p>
-			<p>You've developed masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemist's supplies as the spellcasting focus, you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier (minimum of +1).</p>
+			<p><em>5th-level Tinkerer feature</em></p>
+			<p>you've developed masterful command over any object you can tinker with, enhancing your ability to transmute objects. Whenever you cast a transmutational spell using tinkerer's tools as a spellcasting focus, the casting time of the spell is cut in half.</p>
 		</description>
 		<sheet>
-			<description>Whenever you cast a spell using your alchemist’s supplies, you gain a +{{alchemical savant:bonus}} bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage.</description>
+			<description>Whenever you cast a transmutational spell using tinkerer's tools as a spellcasting focus, the casting time of the spell is cut in half.</description>
 		</sheet>
 		<rules>
-			<stat name="alchemical savant:bonus" value="1" bonus="base" />
-			<stat name="alchemical savant:bonus" value="intelligence:modifier" bonus="base" />
 		</rules>
 	</element>
-	<element name="Restorative Reagents" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_RESTORATIVE_REAGENTS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_RESTORATIVE_REAGENTS</requirements>
+	<element name="Accidental Tinkerage" type="Archetype Feature" source="Artificer-Tinkerer" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_ACCIDENTAL_TINKERAGE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ARTI_ARTIFICER_TINKERER_ACCIDENTAL_TINKERAGE</requirements>
 		<description>
-			<p><em>9th-level Alchemist feature</em></p>
-			<p>You can incorporate restorative reagents into some of your works:</p>
-			<ul>
-				<li>Whenever a creature drinks an <i>experimental elixir</i> you created, the creature gains temporary hit points equal to 2d6 + your Intelligence modifier (minimum of 1 temporary hit point).</li>
-				<li>You can cast <i>lesser restoration</i> without expending a spell slot and without preparing the spell, provided you use alchemist’s supplies as the spellcasting focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.</li>
-			</ul>
+			<p><em>9th-level Tinkerer feature</em></p>
+			<p>you have a tendency to accidentally cast a separate transmutational spell that you have prepared.</p>
+			<p>Whenever you cast an attacking spell, roll a separate d8, if it lands on an 8, a random transmutational spell that you have prepared will cast on the target of the previous spell(if applicable).</p>
 		</description>
 		<sheet>
-			<description>Whenever a creature drinks an experimental elixir you created, the creature gains 2d6+{{intelligence:modifier}} temporary hp. &#13;
-			You can cast lesser restoration {{restorative reagents:usage}} times per long rest without expending a spell slot and without preparing the spell, provided you use alchemist’s supplies as the spellcasting focus.</description>
+			<description>you have a tendency to accidentally cast a separate transmutational spell that you have prepared. &#13;
+			Whenever you cast an attacking spell, roll a separate d8, if it lands on an 8, a random transmutational spell that you have prepared will cast on the target of the previous spell.</description>
 		</sheet>
 		<rules>
-			<stat name="restorative reagents:usage" value="1" bonus="base" />
-			<stat name="restorative reagents:usage" value="intelligence:modifier" bonus="base" />
 		</rules>
 	</element>
-	<element name="Chemical Mastery" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_CHEMICAL_MASTERY">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_CHEMICAL_MASTERY</requirements>
+	<element name="Infusion Mastery" type="Archetype Feature" source="Artificer-Tinkerer" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_INFUSION_MASTERY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ARTI_ARTIFICER_TINKERER_INFUSION_MASTERY</requirements>
 		<description>
-			<p><em>15th-level Alchemist feature</em></p>
-			<p>You have been exposed to so many chemicals that they pose little risk to you, and you can use them to quickly end certain ailments:</p>
-			<ul>
-				<li>You gain resistance to acid damage and poison damage, and you are immune to the poisoned condition.</li>
-				<li>You can cast <i>greater restoration</i> and <i>heal</i> without expending a spell slot, without preparing the spell, and without material components, provided you use alchemist’s supplies as the spellcasting focus. Once you cast either spell with this feature, you can’t cast that spell with it again until you finish a long rest.</li>
-			</ul>
+			<p><em>15th-level Tinkerer feature</em></p>
+			<p>you are becoming more efficient at infusion of nonmagical objects, decreasing the time necessary to infuse said objects.</p>
+			<p>Per long rest, you can expend a action to use your artificer infusions whilst having the ability to add two infusions to one item, but if you expend a bonus action, you will only be allowed to add one infusion per nonmagical item.</p>
 		</description>
 		<sheet>
-			<description>You are immune to the poisoned condition. &#13;
-			You can cast greater restoration and heal once per long rest without expending a spell slot, without preparing the spell, and without material components, provided you use alchemist’s supplies as the spellcasting focus.</description>
+			<description>you are becoming more efficient at infusion of nonmagical objects &#13;
+			Per long rest, you can expend a action to use your artificer infusions whilst having the ability to add two infusions to one item &#13;
+			but if you expend a bonus action, you will only be allowed to add one infusion per nonmagical item.</description>
 		</sheet>
 		<rules>
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
-			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
 		</rules>
 	</element>
 
 	<!--Feature Replacement Grants-->
-	<element name="Tool Proficiency Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_TOOL_PROFICIENCY" />
-	<element name="Alchemist Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_SPELLS" />
-	<element name="Experimental Elixir Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_EXPERIMENTAL_ELIXIR" />
-	<element name="Alchemical Savant Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_ALCHEMICAL_SAVANT" />
-	<element name="Restorative Reagents Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_RESTORATIVE_REAGENTS" />
-	<element name="Chemical Mastery Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_CHEMICAL_MASTERY" />
+	<element name="Tool Proficiency Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ARTI_ARTIFICER_TINKERER_TOOL_PROFICIENCY" />
+	<element name="Tinkerer Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ARTI_ARTIFICER_TINKERER_SPELLS" />
+	<element name="Tinkerer Infusions Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ARTI_ARTIFICER_TINKERER_TINKERERS_INFUSIONS" />
+	<element name="Transmutational Savant Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ARTI_ARTIFICER_TINKERER_TRANSMUTATIONAL_SAVANT" />
+	<element name="Accidental Tinkerage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ARTI_ARTIFICER_TINKERER_ACCIDENTAL_TINKERAGE" />
+	<element name="Infusion Mastery Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ARTI_ARTIFICER_TINKERER_INFUSION_MASTERY" />
 </elements>
