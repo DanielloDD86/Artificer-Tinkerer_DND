@@ -59,47 +59,33 @@
 		<sheet display="false" />
 		<rules>
 			<grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" spellcasting="Artificer" level="3" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_SICKNESS" spellcasting="Artificer" level="3" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" spellcasting="Artificer" level="5" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_MELFS_ACID_ARROW" spellcasting="Artificer" level="5" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_GASEOUS_FORM" spellcasting="Artificer" level="9" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_MASS_HEALING_WORD" spellcasting="Artificer" level="9" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_BLIGHT" spellcasting="Artificer" level="13" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_ACQINC_SPELL_DISTORT_VALUE" spellcasting="Artificer" level="3" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_SCOC_SPELL_KINETIC_JAUNT" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_TRAPS" spellcasting="Artificer" level="5" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_TINY_SERVANT" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" spellcasting="Artificer" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FABRICATE" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STONE_SHAPE" spellcasting="Artificer" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMATE_OBJECTS" spellcasting="Artificer" level="17" prepared="true" />
 			<grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" spellcasting="Artificer" level="17" prepared="true" />
-			<grant type="Spell" id="ID_PHB_SPELL_RAISE_DEAD" spellcasting="Artificer" level="17" prepared="true" />
 		</rules>
 	</element>
-	<element name="Experimental Elixir" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TCOE_ARTIFICER_ALCHEMIST_EXPERIMENTAL_ELIXIR</requirements>
+	<element name="Tinkerer's Infusions" type="Archetype Feature" source="Artificer-Tinkerer" id="ID_HMBR_ARTI_ARCHETYPE_FEATURE_TINKERER_TINKERERS_INFUSIONS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ARTI_ARTIFICER_TINKERER_TINKERERS_INFUSIONS</requirements>
 		<description>
-			<p><em>3rd-level Alchemist feature</em></p>
-			<p>Whenever you finish a long rest, you can magically produce an <i>experimental elixir</i> in an empty flask you touch. Roll on the Experimental Elixir table for the elixir’s effect, which is triggered when someone drinks the elixir. As an action, a creature can drink the elixir or administer it to an incapacitated creature.</p>
-			<p class="indent">You can create additional <i>experimental elixir</i> by expending a spell slot of 1st level or higher for each one. When you do so, you use your action to create the elixir in an empty flask you touch, and you choose the elixir's effect from the Experimental Elixir table.</p>
-			<p class="indent">Creating an <i>experimental elixir</i> requires you to have alchemist supplies on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next long rest.</p>
-			<p class="indent">When you reach certain levels in this class, you can make more elixirs at the end of a long rest: two at 6th level and three at 15th level. Roll for each elixir’s effect separately. Each elixir requires its own flask.</p>
-			<p><strong>Experimental Elixir</strong></p>
-			<table>
-				<thead>
-					<tr><td>d6</td><td>Effect</td></tr>
-				</thead>
-				<tr><td>1</td><td><strong>Healing.</strong> The drinker regains a number of hit points equal to 2d4 + your Intelligence modifier.</td></tr>
-				<tr><td>2</td><td><strong>Swiftness.</strong> The drinker’s walking speed increases by 10 feet for 1 hour.</td></tr>
-				<tr><td>3</td><td><strong>Resilience.</strong> The drinker gains a +1 bonus to AC for 10 minutes.</td></tr>
-				<tr><td>4</td><td><strong>Boldness.</strong> The drinker can roll a d4 and add the number rolled to every attack roll and saving throw they make for the next minute.</td></tr>
-				<tr><td>5</td><td><strong>Flight.</strong> The drinker gains a flying speed of 10 feet for 10 minutes.</td></tr>
-				<tr><td>6</td><td><strong>Transformation.</strong> The drinker’s body is transformed as if by the alter self spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes.</td></tr>
-			</table>
+			<p><em>3rd-level Tinkerer feature</em></p>
+			<p>Beginning at 3rd level, whenever you finish a long rest, anytime you add an infusion to nonmagical item or object, you can choose to add two infusions onto that object, but instead of it being magical indefinitely, when the item is used for a check or attack more than 5 times, the object will lose both of its infusions and needs to be reapplied when you finish a long rest.</p>
+			<p class="indent">When you are infusing multiple items during you rest, if you are double infusing, then means you can only infuse half rounded down the amount of the maximum amount of items you can infuse.</p>
+			<p class="indent">Maximum number of objects you can infuse is {{magical tinkering:objects}}.</p>
 		</description>
 		<sheet>
-			<description>Whenever you finish a long rest, you can magically produce up to {{experimental elixir:count}} elixirs, each in an empty flask you touch. &#13;
-			Any elixir you create with this feature lasts until it is drunk or until the end of your next long rest. &#13;
-			You can create additional experimental elixirs by expending a spell slot of 1st level or higher for each one.</description>
+			<description>whenever you finish a long rest, anytime you add an infusion to nonmagical item or object, you can choose to add two infusions onto that object. &#13;
+			When you are infusing multiple items during you rest, if you are double infusing, then means you can only infuse half rounded down the amount of the maximum amount of items you can infuse. &#13;
+			Maximum number of objects you can infuse is {{magical tinkering:objects}}.</description>
 		</sheet>
 		<rules>
-			<stat name="experimental elixir:count" value="1" bonus="base" />
-			<stat name="experimental elixir:count" value="2" bonus="base" level="6" />
-			<stat name="experimental elixir:count" value="3" bonus="base" level="15" />
+			<stat name="magical tinkering:objects" value="1" bonus="base" />
+			<stat name="magical tinkering:objects" value="intelligence:modifier" bonus="base" />
 		</rules>
 	</element>
 	<element name="Alchemical Savant" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMICAL_SAVANT">
