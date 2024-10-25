@@ -1,0 +1,29 @@
+Tinkerer (Artificer Sub-class)
+
+Tool Proficiency - When you adopt this specialization at 3rd level, you gain proficiency with tinker's tools. If you already have this proficiency, you gain proficiency with one other type of artisan's tools of your choice.
+
+Alchemist Spells
+
+Starting at 3rd level, you always have certain spells prepared after you reach particular levels in this class, as shown in the Tinkerer Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prepare.
+
+Artificer Spells     Alchemist Spells
+3rd                  Absorb Elements, Distort Value   
+5th                  Kinetic Jaunt, Find Traps
+9th                  Tiny Servant, Dispel Magic
+13th                 Fabricate, Stone Shape
+17th                 Animate Objects, Cloudkill
+
+Tinkerers Infusions
+Beginning at 3rd level, whenever you finish a long rest, anytime you add an infusion to nonmagical item or object, you can choose to add two infusions onto that object, but instead of it being magical indefinitely, when the item is used for a check or attack more than 5 times, the object will lose both of its infusions and needs to be reapplied when you finish a long rest.
+When you are infusing multiple items during you rest, if you are double infusing, then means you can only infuse half rounded down the amount of the maximum amount of items you can infuse.
+
+Transmutational Savant
+At 5th level, you've developed masterful command over any object you can tinker with, enhancing your ability to transmute objects. Whenever you cast a transmutational spell using tinkerer's tools as a spellcasting focus, the casting time of the spell is cut in half.
+
+Accidental Tinkerage
+At 9th level, you have a tendency to accidentally cast a separate transmutational spell that you have prepared. Whenever you cast an attacking spell, roll a separate d8, if it lands on an 8, a random transmutational spell that you have prepared will cast on the target of the previous spell(if applicable).
+
+Infusion Mastery
+At 15th level, you are becoming more efficient at infusion nonmagical objects, decreasing the time necessary to infuse said objects.
+
+Per long rest, you can expend a action to use your artificer infusions whilst having the ability to add two infusions to one item, but if you expend a bonus action, you will only be allowed to add one infusion per nonmagical item.
