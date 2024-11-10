@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Warforged Mechanical Arm Functions</name>
+        <update version="0.0.1">
+			<file name="Warforged_Arm.xml" url="https://github.com/DanielloDD86/Artificer-Tinkerer_DND/raw/master/Archetype/Warforged_Arm.xml" />
+		</update>
+	</info>
+    <element name="Mechanical Arm" type="Feat" source="Jack's Campaign" id="ID_HMBR_JCP_FEAT_ARM">
+        <description>
+        <p>Once Attached it allows the user to Attach a Single Bladed weapon to it and use it as a bonus action</p>
+        </description>
+        <sheet>
+			<description>Once Attached it allows the user to Attach a Single Bladed weapon to it and use it as a bonus action.</description>
+		</sheet>
+	</element>	
+    <element name="Mechanical Arm" type="Item" source="Jack's Campaign" id="ID_HMBR_JCP_ITEM_ARM">
+        <description>
+        <p>Once Attached it allows the user to Attach a Single Bladed weapon to it and use it as a bonus action</p>
+        </description>
+        <setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+        <rules>
+			<grant type="Grants" id="ID_HMBR_JCP_FEAT_ARM" />
+		</rules>
+	</element>	
+</elements>
