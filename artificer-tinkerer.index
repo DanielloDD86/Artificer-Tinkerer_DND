@@ -2,11 +2,12 @@
 <index>
 	<info>
 		<name>Artificer-Tinkerer</name>
-		<update version="1.0.0">
+		<update version="1.1.0">
 			<file name="artificer-tinkerer.index" url="https://github.com/DanielloDD86/Artificer-Tinkerer_DND/raw/master/artificer-tinkerer.index" />
 		</update>
 	</info>
 	<files>
+		<file name="artificer-tinkerer.xml" url="https://github.com/DanielloDD86/Artificer-Tinkerer_DND/raw/master/Archetype/artificer-tinkerer.xml" />
 		<file name="artificer-tinkerer.xml" url="https://github.com/DanielloDD86/Artificer-Tinkerer_DND/raw/master/Archetype/artificer-tinkerer.xml" />
 	</files>
 </index>
