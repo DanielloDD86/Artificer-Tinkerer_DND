@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Tinkerer Artificer Archetype</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="artificer-tinkerer.xml" url="https://github.com/DanielloDD86/Artificer-Tinkerer_DND/raw/master/Archetype/artificer-tinkerer.xml" />
 		</update>
 	</info>
@@ -58,6 +58,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
+			<grant type="Spell" id="ID_HMBR_JCP_SPELL_CURE_DRUNKNESS" spellcasting="Artificer" level="1" prepared="true" />
 			<grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" spellcasting="Artificer" level="3" prepared="true" />
 			<grant type="Spell" id="ID_WOTC_ACQINC_SPELL_DISTORT_VALUE" spellcasting="Artificer" level="3" prepared="true" />
 			<grant type="Spell" id="ID_WOTC_SCOC_SPELL_KINETIC_JAUNT" spellcasting="Artificer" level="5" prepared="true" />
