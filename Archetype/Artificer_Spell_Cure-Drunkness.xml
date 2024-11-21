@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Artificer Spell Cure Drunkness</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="Artificer_Spell_Cure-Drunkness.xml" url="https://github.com/DanielloDD86/Artificer-Tinkerer_DND/raw/master/Archetype/Artificer_Spell_Cure-Drunkness.xml" />
 		</update>
 	</info>
@@ -27,3 +27,4 @@
 			<set name="isRitual">true</set>
 		</setters>
 	</element>
+</elements>
