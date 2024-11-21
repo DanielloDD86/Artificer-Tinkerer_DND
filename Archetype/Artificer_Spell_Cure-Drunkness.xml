@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Artificer Spell Cure Drunkness</name>
+		<update version="0.0.1">
+			<file name="Artificer_Spell_Cure-Drunkness.xml" url="https://github.com/DanielloDD86/Artificer-Tinkerer_DND/raw/master/Archetype/Artificer_Spell_Cure-Drunkness.xml" />
+		</update>
+	</info>
+
+    <element name="Cure Drunkness" type="Spell" source="Artificer-Tinkerer" id="ID_HMBR_JCP_SPELL_CURE_DRUNKNESS">
+		<supports>Cleric, Druid, Paladin, Artificer</supports>
+		<description>
+			<p>All drunk creatures within a 5-foot-radius sphere centered on a point of your choice within range are cured of drunkness.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
